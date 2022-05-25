@@ -263,7 +263,7 @@
   \newfontfamily{\kaiti@letter}{KaiTi}
   \newfontfamily{\songti@letter}{SimSun}
   \setmainfont{Times New Roman}
-  \setmathfont{XITS Math}
+  \setmathfont{Cambria Math}
   \setmathfont[range={\mathcal,\mathbfcal},StylisticSet=1]{XITS Math}
 \else
   \ifmacosx
@@ -1024,7 +1024,7 @@
   \dim_new:N \spaceWidth
   \bp_set_to_width:Nn \spaceWidth {\clist_item:Nn \l_dcc_tl 1}
 
-  \tl_gput_right:Nn \g_dc_tabular_tl {{\clist_item:Nn \l_dcc_tl 1 \clist_item:Nn \l_dcc_tl 3}：&\sanhao\underline{\parbox[t]{10em}{\clist_item:Nn \l_dcc_tl 2}}\xiaowu（{\color{red}{注：主席}}）\\}
+  \tl_gput_right:Nn \g_dc_tabular_tl {{\clist_item:Nn \l_dcc_tl 1 \clist_item:Nn \l_dcc_tl 3}：&\sanhao\underline{\parbox[t]{10em}{\clist_item:Nn \l_dcc_tl 2}}\xiaowu\\}
 
   \seq_map_variable:NNn \g_defense_committee_seq \i {
     \bp_set_to_width:Nn \spaceWidth {\clist_item:Nn \i 2}
@@ -1675,7 +1675,7 @@
   \addcontentsline{toc}{chapter}{常规评阅人名单}
   \addcontentsline{toe}{chapter}{General Reviewers List}
   \hypersetup{bookmarksdepth=2}
-  本学位论文共接受 #1 位专家评阅，其中常规评阅人 #2 名，名单如下：
+  本学位论文共接受 #1 位专家评阅，其中常规评阅人 #2 名。
   \ifthesis@blind\else
     \renewcommand{\arraystretch}{1.5}
     \begin{table}[H]
